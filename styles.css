@@ -1,1 +1,50 @@
-/*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  gap: 10px;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: all 0.7s ease-in;
+}
+
+.panel .img-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  font-size: 1.5rem;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Active Panel Expands */
+.panel.active {
+  flex: 5;
+}
+
+.panel.active .img-text {
+  opacity: 1;
+}
