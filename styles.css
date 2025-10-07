@@ -31,7 +31,7 @@ body {
   transition: all 0.7s ease-in;
 }
 
-.panel .img-text {
+h3.img-text {
   position: absolute;
   bottom: 20px;
   left: 20px;
